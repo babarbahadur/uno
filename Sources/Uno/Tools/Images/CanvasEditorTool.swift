@@ -173,10 +173,8 @@ struct NewCanvasView: View {
             }
             .padding(28)
         }
-        .dropDestination(for: URL.self) { urls, _ in
-            guard let url = urls.first(where: \.isFileURL) else { return false }
-            model.openImageAsCanvas(url)
-            return true
+        .onFileDrop { urls in
+            if let url = urls.first { model.openImageAsCanvas(url) }
         }
     }
 

@@ -526,6 +526,7 @@ final class CanvasEditorModel: ObservableObject {
         guard let previous = undoStack.popLast(), let current = doc else { return }
         redoStack.append(current)
         doc = previous
+        if mode == .crop { refitCrop() }
         validateSelection()
     }
 
@@ -533,6 +534,7 @@ final class CanvasEditorModel: ObservableObject {
         guard let next = redoStack.popLast(), let current = doc else { return }
         undoStack.append(current)
         doc = next
+        if mode == .crop { refitCrop() }
         validateSelection()
     }
 
@@ -787,6 +789,8 @@ final class CanvasEditorModel: ObservableObject {
     func removeDistortion() {
         checkpoint()
         updateSelected { $0.corners = nil }
+        // Stay editable in Distort mode: start again from the plain outline.
+        if mode == .distort { ensureCorners() }
     }
 
     func nudge(dx: CGFloat, dy: CGFloat) {

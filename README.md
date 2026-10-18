@@ -13,7 +13,7 @@ bash build_app.sh --install
 
 ## Tools
 
-**Image Editor:** a Photopea-style editor on one screen.
+**Image Editor:** an all-in-one editor on a single screen.
 - **Canvas:** A4, A5, Letter, ID card, ID/passport photo, 10×15 photo, screen sizes or a custom size, at 150, 300 or 600 dpi. You can also open an existing image.
 - **Images:** PNG, JPEG, HEIC, TIFF, WebP, GIF, BMP or a PDF page. Drag them in, add them from a file, or paste them.
 - **Layers:** move, resize, rotate, skew, flip and set opacity, or distort by dragging four corners for perspective. You can also hide, duplicate and reorder layers.
@@ -26,13 +26,17 @@ bash build_app.sh --install
 
 **PDF:** Merge, Split, Organize (reorder/rotate/remove), Delete Pages, Extract Pages, Compress, Sign, Add Password, Remove Password, Images to PDF, PDF to Images
 
-**On-device AI:** Make PDF Searchable (OCR using Apple Vision)
+**On-device AI:** Make PDF Searchable (on-device text recognition)
 
 **Batch Resize:** resize many images by percentage, longest side, width, height, fit-in-box or exact size (crop to fill), with presets for social media, ID photos and A4.
 
 **Batch Convert:** JPEG, PNG, HEIC, WebP, TIFF, GIF, BMP or PDF (the list comes from what this Mac can write). You can set the quality, fill transparency with a colour, and remove location and camera data. It can also **straighten documents** with on-device AI and apply any image editor filter (Scanned document, Photocopy, B&W…) with a live preview. PDF output can combine everything into one PDF. Quick setup turns phone photos into clean scans in one click.
 
 Both batch tools can cap each file's size (e.g. under 500 KB) and process several images at once. They never overwrite your originals.
+
+## Tests
+
+Run `bash run_tests.sh` (needs Xcode). See `TESTING.md` for what's covered and a click-through checklist.
 
 ## Adding a new tool
 

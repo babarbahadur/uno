@@ -460,7 +460,7 @@ enum PDFEngine {
         return CGRect(x: rect.midX - width / 2, y: rect.midY - height / 2, width: width, height: height)
     }
 
-    // MARK: - OCR (on-device, Apple Vision)
+    // MARK: - OCR (on-device Vision framework)
 
     struct TextLine {
         let text: String

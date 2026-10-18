@@ -66,7 +66,7 @@ struct FileCombineTool: View {
                 }
             }
             Toggle("Make text searchable (OCR)", isOn: $ocr)
-                .help("Recognises text in images and scanned pages with Apple's on-device Vision AI.")
+                .help("Recognises text in images and scanned pages with on-device AI.")
             if mode == .images {
                 Toggle("One PDF per image", isOn: $separate)
             }

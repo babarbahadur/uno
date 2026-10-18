@@ -42,12 +42,7 @@ struct HomeView: View {
         }
         .background(Theme.background)
         .navigationTitle("Uno")
-        .dropDestination(for: URL.self) { urls, _ in
-            let files = urls.filter(\.isFileURL)
-            guard !files.isEmpty else { return false }
-            app.openFiles(files)
-            return true
-        }
+        .onFileDrop { urls in app.openFiles(urls) }
     }
 
     // MARK: Sections

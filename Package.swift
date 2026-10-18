@@ -8,6 +8,11 @@ let package = Package(
         .executableTarget(
             name: "Uno",
             path: "Sources/Uno"
+        ),
+        .testTarget(
+            name: "UnoTests",
+            dependencies: ["Uno"],
+            path: "Tests/UnoTests"
         )
     ]
 )

@@ -349,7 +349,7 @@ enum BatchImageEngine {
     static func draw(_ image: CGImage, plan: Plan, opaque: Bool, background: RGB) -> CGImage? {
         let width = Int(plan.canvas.width), height = Int(plan.canvas.height)
         let srgb = CGColorSpace(name: CGColorSpace.sRGB)!
-        // Keep wide-gamut colour (e.g. iPhone Display P3) when possible.
+        // Keep wide-gamut colour (e.g. Display P3 photos) when possible.
         let preferred = image.colorSpace?.model == .rgb ? image.colorSpace : nil
         func makeContext(_ space: CGColorSpace) -> CGContext? {
             CGContext(data: nil, width: width, height: height, bitsPerComponent: 8, bytesPerRow: 0,

@@ -406,8 +406,9 @@ struct BatchImageTool: View {
             }
             return ImageFilters.apply(adjustments, to: image)
         }.value
-        previewLoading = false
+        // A newer preview has started; let it own the spinner and the image.
         guard !Task.isCancelled else { return }
+        previewLoading = false
         previewImage = result
     }
 

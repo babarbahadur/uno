@@ -241,7 +241,7 @@ struct SearchableTool: View {
                      actionEnabled: source.isReady, action: run) {
             PDFToolBody(source: source) {
                 OptionsForm {
-                    Label("Runs entirely on this Mac with Apple's Vision framework.", systemImage: "cpu")
+                    Label("Runs entirely on this Mac with built-in on-device AI.", systemImage: "cpu")
                         .font(.headline)
                     Text("Scanned pages get an invisible text layer, so you can search, select and copy their text. Pages that already contain text are left unchanged.")
                         .foregroundStyle(.secondary)

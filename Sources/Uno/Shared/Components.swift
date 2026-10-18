@@ -185,7 +185,11 @@ struct ActionBar: View {
                     .foregroundStyle(Theme.inkSoft)
             }
             Spacer()
-            Button(action: action) {
+            Button {
+                // Finish any text field edit first, so typed values are used.
+                NSApp.keyWindow?.makeFirstResponder(nil)
+                DispatchQueue.main.async { action() }
+            } label: {
                 Text(title).frame(minWidth: 130)
             }
             .buttonStyle(.neuProminent)
@@ -242,6 +246,9 @@ struct DropZone: View {
                 .padding(.top, 6)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        // Clicking anywhere in the drop area also opens the file picker.
+        .contentShape(Rectangle())
+        .onTapGesture { action() }
         .background(
             Color.clear
                 .neuInset(radius: 22, depth: 5)
@@ -271,6 +278,50 @@ struct ComingSoonView: View {
         }
         .background(Theme.background)
         .navigationTitle(tool.title)
+    }
+}
+
+// MARK: - File drops
+
+/// Collects dropped file URLs in order. A class so the async callbacks can share it safely.
+private final class DropCollector: @unchecked Sendable {
+    private let lock = NSLock()
+    private var items: [(Int, URL)] = []
+
+    func add(_ url: URL, at index: Int) {
+        lock.lock()
+        items.append((index, url))
+        lock.unlock()
+    }
+
+    var urls: [URL] {
+        lock.lock()
+        defer { lock.unlock() }
+        return items.sorted { $0.0 < $1.0 }.map(\.1)
+    }
+}
+
+extension View {
+    /// Accepts files dragged in from Finder.
+    /// Uses `onDrop` rather than `dropDestination`, which on macOS can stop clicks
+    /// from reaching buttons inside the drop area.
+    func onFileDrop(perform action: @escaping ([URL]) -> Void) -> some View {
+        onDrop(of: [UTType.fileURL], isTargeted: nil) { providers in
+            let group = DispatchGroup()
+            let collector = DropCollector()
+            for (index, provider) in providers.enumerated() {
+                group.enter()
+                _ = provider.loadObject(ofClass: URL.self) { url, _ in
+                    if let url, url.isFileURL { collector.add(url, at: index) }
+                    group.leave()
+                }
+            }
+            group.notify(queue: .main) {
+                let urls = collector.urls
+                if !urls.isEmpty { action(urls) }
+            }
+            return !providers.isEmpty
+        }
     }
 }
 
@@ -336,11 +387,16 @@ final class PDFSource: ObservableObject {
     }
 
     func presentOpenPanel() {
-        let panel = NSOpenPanel()
-        panel.allowedContentTypes = [.pdf]
-        panel.allowsMultipleSelection = false
-        panel.prompt = "Open"
-        if panel.runModal() == .OK, let url = panel.url { load(url) }
+        // Open on the next run-loop pass so the click that triggered it has fully finished.
+        DispatchQueue.main.async {
+            let panel = NSOpenPanel()
+            panel.allowedContentTypes = [.pdf]
+            panel.allowsMultipleSelection = false
+            panel.canChooseDirectories = false
+            panel.prompt = "Open"
+            panel.message = "Choose a PDF"
+            if panel.runModal() == .OK, let url = panel.url { self.load(url) }
+        }
     }
 }
 
@@ -367,10 +423,8 @@ struct PDFToolBody<Content: View>: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .dropDestination(for: URL.self) { urls, _ in
-            guard let url = urls.first(where: \.isFileURL) else { return false }
-            source.load(url)
-            return true
+        .onFileDrop { urls in
+            if let url = urls.first { source.load(url) }
         }
         .alert("Can't open file", isPresented: Binding(
             get: { source.errorMessage != nil },
@@ -484,13 +538,15 @@ final class FileQueue: ObservableObject {
     }
 
     func presentOpenPanel() {
-        let panel = NSOpenPanel()
-        panel.allowsMultipleSelection = true
-        panel.canChooseFiles = true
-        panel.canChooseDirectories = true
-        panel.allowedContentTypes = accepts.contains(.pdf) ? [.pdf, .image] : [.image]
-        panel.prompt = "Add"
-        if panel.runModal() == .OK { add(urls: panel.urls) }
+        DispatchQueue.main.async {
+            let panel = NSOpenPanel()
+            panel.allowsMultipleSelection = true
+            panel.canChooseFiles = true
+            panel.canChooseDirectories = true
+            panel.allowedContentTypes = self.accepts.contains(.pdf) ? [.pdf, .image] : [.image]
+            panel.prompt = "Add"
+            if panel.runModal() == .OK { self.add(urls: panel.urls) }
+        }
     }
 
     func move(_ item: InputItem, by offset: Int) {
@@ -531,10 +587,7 @@ struct FileQueueView: View {
                          title: emptyTitle,
                          subtitle: emptySubtitle,
                          buttonTitle: "Choose Files…") { queue.presentOpenPanel() }
-                    .dropDestination(for: URL.self) { urls, _ in
-                        queue.add(urls: urls)
-                        return !urls.isEmpty
-                    }
+                    .onFileDrop { urls in queue.add(urls: urls) }
             } else {
                 VStack(spacing: 0) {
                     HStack(spacing: 8) {
@@ -550,10 +603,17 @@ struct FileQueueView: View {
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
 
-                    List(selection: $queue.selection) {
+                    // No List selection binding: the system highlight is a strong blue.
+                    // Rows draw their own soft selection instead.
+                    List {
                         ForEach(queue.items) { item in
-                            ItemRow(item: item)
-                                .tag(item.id)
+                            ItemRow(item: item, selected: queue.selection == item.id) {
+                                queue.remove(item)
+                            }
+                                .contentShape(Rectangle())
+                                .onTapGesture { queue.selection = item.id }
+                                .listRowSeparator(.hidden)
+                                .listRowBackground(Color.clear)
                                 .contextMenu {
                                     Button("Move Up") { queue.move(item, by: -1) }
                                     Button("Move Down") { queue.move(item, by: 1) }
@@ -570,10 +630,7 @@ struct FileQueueView: View {
                     }
                     .scrollContentBackground(.hidden)
                     .onDeleteCommand { queue.removeSelected() }
-                    .dropDestination(for: URL.self) { urls, _ in
-                        queue.add(urls: urls)
-                        return !urls.isEmpty
-                    }
+                    .onFileDrop { urls in queue.add(urls: urls) }
                 }
             }
         }
@@ -590,21 +647,51 @@ struct FileQueueView: View {
 
 struct ItemRow: View {
     let item: InputItem
+    var selected = false
+    var onRemove: (() -> Void)?
+    @State private var hovering = false
 
     var body: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 12) {
             Thumbnail(url: item.url)
                 .frame(width: 34, height: 42)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 4))
+                .shadow(color: Theme.shadowDark, radius: 2, x: 1, y: 1)
             VStack(alignment: .leading, spacing: 2) {
                 Text(item.name)
+                    .foregroundStyle(Theme.ink)
                     .lineLimit(1)
                     .truncationMode(.middle)
                 Text(item.subtitle)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(Theme.inkSoft)
+            }
+            Spacer()
+            if let onRemove {
+                Button(action: onRemove) {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(Theme.inkSoft)
+                        .frame(width: 22, height: 22)
+                        .background(Circle().fill(Theme.surface))
+                }
+                .buttonStyle(.plain)
+                .opacity(hovering || selected ? 1 : 0)
+                .help("Remove from list")
             }
         }
-        .padding(.vertical, 2)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(selected ? Theme.selection : (hovering ? Theme.shadowDark.opacity(0.10) : Color.clear))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .stroke(selected ? Theme.selectionEdge : Color.clear, lineWidth: 1)
+                )
+        )
+        .onHover { hovering = $0 }
     }
 }
 

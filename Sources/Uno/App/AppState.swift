@@ -172,7 +172,7 @@ enum ToolID: String, CaseIterable, Identifiable, Hashable {
 
     var detail: String {
         switch self {
-        case .canvasEditor: return "A Photopea-style editor. Create an A4, ID card or photo canvas, add images, crop, transform, filter and export."
+        case .canvasEditor: return "An all-in-one editor on a single screen. Create an A4, ID card or photo canvas, add images, crop, transform, filter and export."
         case .merge: return "Combine PDFs and images into a single PDF, in the order you choose."
         case .split: return "Break a PDF into single pages or chunks of pages."
         case .organize: return "Drag pages into a new order, rotate them or remove them."
@@ -184,7 +184,7 @@ enum ToolID: String, CaseIterable, Identifiable, Hashable {
         case .removePassword: return "Save a copy without the password. Only for PDFs you're allowed to unlock."
         case .imagesToPDF: return "Turn photos and scans into a PDF, with optional text recognition."
         case .pdfToImages: return "Save every page as a PNG or JPEG."
-        case .makeSearchable: return "Apple's on-device Vision AI adds selectable, searchable text to scanned pages."
+        case .makeSearchable: return "On-device AI adds selectable, searchable text to scanned pages."
         case .resizeImage: return "Resize many images at once by percentage, longest side, width, height or an exact size."
         case .convertImage: return "Convert many images between JPEG, PNG, HEIC, WebP, TIFF and PDF. Set the quality, cap the file size, remove location data."
         }
@@ -192,7 +192,7 @@ enum ToolID: String, CaseIterable, Identifiable, Hashable {
 
     var keywords: String {
         switch self {
-        case .canvasEditor: return "photopea photoshop canvas crop skew rotate perspective distort transform layer text filter scan scanner id card passport photo a4 background remove enhance print"
+        case .canvasEditor: return "editor canvas crop skew rotate perspective distort transform layer text filter scan scanner id card passport photo a4 background remove enhance print"
         case .merge: return "combine join append"
         case .split: return "separate break"
         case .organize: return "rotate reorder sort arrange move"

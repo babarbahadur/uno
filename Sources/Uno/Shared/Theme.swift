@@ -37,6 +37,9 @@ enum Theme {
 
     static let success = Color(light: 0x7F9A86, dark: 0x9DB8A3)
     static let danger = Color(light: 0xB0533F, dark: 0xE08A76)
+    /// Soft mist-blue used for selected rows: calm, and it sits well on porcelain.
+    static let selection = Color(light: 0xDCE5EC, dark: 0x3A4550)
+    static let selectionEdge = Color(light: 0xB9C8D4, dark: 0x56677A)
 
     static let accentGradient = LinearGradient(colors: [accentTop, accentBottom], startPoint: .top, endPoint: .bottom)
 }
@@ -101,12 +104,19 @@ private struct NeuPressable: ViewModifier {
     let pressed: Bool
     let radius: CGFloat
 
+    // Both looks stay in the view tree and only their opacity changes. Swapping views while the
+    // mouse is down makes macOS cancel the click, so the button's action would never run.
     func body(content: Content) -> some View {
-        if pressed {
-            content.neuInset(radius: radius, depth: 3)
-        } else {
-            content.neuRaised(radius: radius, depth: 4)
-        }
+        content.background(
+            ZStack {
+                Color.clear
+                    .neuRaised(radius: radius, depth: 4)
+                    .opacity(pressed ? 0 : 1)
+                Color.clear
+                    .neuInset(radius: radius, depth: 3)
+                    .opacity(pressed ? 1 : 0)
+            }
+        )
     }
 }
 

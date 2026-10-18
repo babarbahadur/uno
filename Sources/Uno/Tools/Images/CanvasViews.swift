@@ -108,8 +108,9 @@ struct CanvasStage: View {
                 StageContent(model: model, doc: doc, viewport: geo.size, onInteract: { focused = true })
             }
         }
-        .focusable()
+        .focusable(interactions: .edit)
         .focused($focused)
+        .onAppear { focused = true }
         .focusEffectDisabled()
         .onDeleteCommand { model.deleteSelected() }
         .onMoveCommand { direction in
@@ -126,12 +127,7 @@ struct CanvasStage: View {
         .onExitCommand {
             if model.mode != .move { model.mode = .move } else { model.select(nil) }
         }
-        .dropDestination(for: URL.self) { urls, _ in
-            let files = urls.filter(\.isFileURL)
-            guard !files.isEmpty else { return false }
-            model.addImages(urls: files)
-            return true
-        }
+        .onFileDrop { urls in model.addImages(urls: urls) }
     }
 }
 
@@ -577,6 +573,7 @@ struct InspectorPanel: View {
                 .labelsHidden()
                 Toggle("Bold", isOn: model.textBinding(\.bold, default: false))
                     .toggleStyle(.button)
+                    .buttonStyle(.bordered)
                 ColorPicker("", selection: Binding(
                     get: { model.selectedLayer?.text?.color.color ?? .black },
                     set: { value in model.updateText { $0.color = RGB(value) } }
