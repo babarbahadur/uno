@@ -1,0 +1,549 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Uno-arm64-apple-macosx26.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/sources",
+      "importPath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/UnoMain.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Components.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/PDFEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEditorTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasViews.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/FileCombineTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/PageTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SignTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SimplePDFTools.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Uno",
+      "moduleOutputPath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Modules/Uno.swiftmodule",
+      "objects" : [
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool.swift.o",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "12",
+        "-serialize-diagnostics",
+        "-O",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Uno_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "uno"
+      ],
+      "outputFileMapPath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Modules/Uno.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/AppState.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/HomeView.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/UnoMain.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Components.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Models.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/PDFEngine.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Theme.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageEngine.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageTool.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEditorTool.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEngine.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasModel.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasViews.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/FileCombineTool.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/PageTool.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SignTool.swift",
+        "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SimplePDFTools.swift"
+      ],
+      "tempsPath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Uno" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Uno",
+      "-package-name",
+      "uno",
+      "-c",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/AppState.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/HomeView.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/UnoMain.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Components.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Models.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/PDFEngine.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Theme.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageEngine.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageTool.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEditorTool.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEngine.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasModel.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasViews.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/FileCombineTool.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/PageTool.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SignTool.swift",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SimplePDFTools.swift",
+      "-I",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "12",
+      "-serialize-diagnostics",
+      "-O",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Uno_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "uno",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Uno" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/UnoMain.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Components.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/PDFEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEditorTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasViews.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/FileCombineTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/PageTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SignTool.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SimplePDFTools.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/sources"
+    },
+    "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.product/Objects.LinkFileList"
+    },
+    "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

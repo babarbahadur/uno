@@ -1,0 +1,109 @@
+{
+  "": {
+    "dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Uno.d",
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Uno.o",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/master.swiftdeps"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/AppState.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/AppState.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/HomeView.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/HomeView.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/App/UnoMain.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/UnoMain.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Components.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Components.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Models.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Models.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/PDFEngine.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PDFEngine.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Shared/Theme.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/Theme.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageEngine.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageEngine.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/BatchImageTool.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/BatchImageTool.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEditorTool.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEditorTool.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasEngine.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasEngine.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasModel.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasModel.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/Images/CanvasViews.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/CanvasViews.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/FileCombineTool.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/FileCombineTool.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/PageTool.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/PageTool.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SignTool.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SignTool.dia"
+  },
+  "/Users/macbook/Documents/B-Drive/Babar/Uno/Sources/Uno/Tools/PDF/SimplePDFTools.swift": {
+    "object": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools.swift.o",
+    "swiftmodule": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools~partial.swiftmodule",
+    "swift-dependencies": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools.swiftdeps",
+    "diagnostics": "/Users/macbook/Documents/B-Drive/Babar/Uno/.build/arm64-apple-macosx/release/Uno.build/SimplePDFTools.dia"
+  }
+}
